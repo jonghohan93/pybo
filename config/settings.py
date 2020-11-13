@@ -25,7 +25,7 @@ SECRET_KEY = 'gkp2-bane&hfgs$(lgh@bzb2ezjxk&5$v&@ss43ny#(k&_k2vb'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['3.219.111.239']
 
 
 # Application definition
