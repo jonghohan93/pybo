@@ -19,6 +19,8 @@ def index(request):
 	else:  # recent
 		question_list = Question.objects.order_by('-create_date')
 
+	3/0 #오류 행
+
 	if kw:
 		question_list = question_list.filter(
 			Q(subject__icontains=kw) |
