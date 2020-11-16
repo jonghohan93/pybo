@@ -19,7 +19,6 @@ def index(request):
 	else:  # recent
 		question_list = Question.objects.order_by('-create_date')
 
-	3/0 #오류 행
 
 	if kw:
 		question_list = question_list.filter(
@@ -38,3 +37,10 @@ def detail(request, question_id):
 	question = get_object_or_404(Question, pk=question_id)
 	context = {'question': question}
 	return render(request, 'pybo/question_detail.html', context)
+
+
+import logging
+logger = logging.getLogger('pybo')
+
+def index(request):
+	logger.info("INFO 레벨로 출력")
