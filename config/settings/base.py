@@ -147,8 +147,8 @@ LOGGING = {
             '()': 'django.utils.log.ServerFormatter',
             'format': '[{server_time}] {message}',
             'style': '{',
-        }
-         'standard': {
+        },
+        'standard': {
             'format': '%(asctime)s [%(levelname)s] %(name)s: %(message)s'
         },
     },
@@ -167,7 +167,7 @@ LOGGING = {
             'level': 'ERROR',
             'filters': ['require_debug_false'],
             'class': 'django.utils.log.AdminEmailHandler'
-        }
+        },
         'file': {
             'level': 'INFO',
             'filters': ['require_debug_false'],
